@@ -1,11 +1,11 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "allowAddNewRow": true,
+  "allowAddNewRow": false,
   "animateLoading": true,
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 34,
+  "bottomRow": 71,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -32,18 +32,24 @@
     }
   },
   "columnOrder": [
+    "rowIndex",
     "Timestamp",
     "Nama_agent",
-    "rowIndex",
     "Nomor_handphone_user__terhubung_whatsapp_",
     "Nama_user",
     "Chat_dari_user_terkait_suggestion",
     "Summary_suggestion",
-    "Layanan_Everpro",
-    "EditActions1"
+    "Layanan_Everpro"
   ],
-  "columnUpdatedAt": 1745052374691,
-  "columnWidthMap": {},
+  "columnUpdatedAt": 1745054904913,
+  "columnWidthMap": {
+    "Chat_dari_user_terkait_suggestion": 495,
+    "Nama_agent": 169,
+    "Nama_user": 156,
+    "Summary_suggestion": 410,
+    "Timestamp": 198,
+    "rowIndex": 104
+  },
   "customIsLoading": false,
   "customIsLoadingValue": "",
   "defaultPageSize": 0,
@@ -78,21 +84,6 @@
       "key": "primaryColumns.rowIndex.computedValue"
     },
     {
-      "key": "primaryColumns.EditActions1.saveButtonColor"
-    },
-    {
-      "key": "primaryColumns.EditActions1.saveBorderRadius"
-    },
-    {
-      "key": "primaryColumns.EditActions1.discardBorderRadius"
-    },
-    {
-      "key": "primaryColumns.EditActions1.isSaveDisabled"
-    },
-    {
-      "key": "primaryColumns.EditActions1.isDiscardDisabled"
-    },
-    {
       "key": "primaryColumns.Nomor_handphone_user__terhubung_whatsapp_.computedValue"
     },
     {
@@ -111,12 +102,6 @@
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
-    },
-    {
-      "key": "primaryColumns.EditActions1.isSaveDisabled"
-    },
-    {
-      "key": "primaryColumns.EditActions1.isDiscardDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -131,19 +116,16 @@
     },
     {
       "key": "onAddNewRowSave"
-    },
-    {
-      "key": "primaryColumns.EditActions1.onSave"
     }
   ],
-  "enableClientSideSearch": false,
+  "enableClientSideSearch": true,
   "flexVerticalAlignment": "start",
   "horizontalAlignment": "LEFT",
   "inlineEditingSaveOption": "ROW_LEVEL",
   "isLoading": false,
   "isSortable": true,
   "isVisible": true,
-  "isVisibleDownload": false,
+  "isVisibleDownload": true,
   "isVisibleFilters": false,
   "isVisiblePagination": true,
   "isVisibleSearch": true,
@@ -158,8 +140,10 @@
   "needsErrorInfo": false,
   "onAddNewRowSave": "{{Insert_Form_Responses_11.run(() => {\n            showAlert(\"Successfully created!\");\n            Find_Form_Responses_11.run()\n          }, () => {\n            showAlert(\"Unable to create!\");\n          })}}",
   "onPageChange": "{{\n            Find_Form_Responses_11.run();\n            Total_record_Form_Responses_11.run()\n          }}",
-  "onSearchTextChanged": "{{\n            Find_Form_Responses_11.run();\n            Total_record_Form_Responses_11.run()\n          }}",
+  "onSearchTextChanged": "{{Total_record_Form_Responses_11.run();}}",
   "onSort": "{{\n            Find_Form_Responses_11.run();\n            Total_record_Form_Responses_11.run()\n          }}",
+  "originalBottomRow": 73,
+  "originalTopRow": 16,
   "parentColumnSpace": 20.25,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -192,50 +176,6 @@
       "originalId": "Chat dari user terkait suggestion",
       "sticky": "",
       "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "EditActions1": {
-      "alias": "EditActions1",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "buttonStyle": "rgb(3, 179, 101)",
-      "columnType": "editActions",
-      "computedValue": "",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "discardActionLabel": "Discard",
-      "discardBorderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-      "discardButtonColor": "#F22B2B",
-      "discardButtonVariant": "TERTIARY",
-      "discardIconAlign": "left",
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "EditActions1",
-      "index": 8,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": true,
-      "isDisabled": false,
-      "isDiscardDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "Save / Discard",
-      "notation": "standard",
-      "onSave": "{{Update_Form_Responses_11.run(() => {\n            showAlert(\"Successfully saved!\");\n            Find_Form_Responses_11.run()\n          }, () => {\n            showAlert(\"Unable to save!\");\n          })}}",
-      "originalId": "EditActions1",
-      "saveActionLabel": "Save",
-      "saveBorderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-      "saveButtonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
-      "saveIconAlign": "left",
-      "sticky": "right",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -289,12 +229,12 @@
       "horizontalAlignment": "LEFT",
       "id": "Nama_agent",
       "index": 1,
-      "isCellEditable": true,
+      "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
-      "isEditable": true,
+      "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
       "label": "Nama agent",
@@ -422,12 +362,12 @@
       "horizontalAlignment": "LEFT",
       "id": "Timestamp",
       "index": 0,
-      "isCellEditable": true,
+      "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
-      "isEditable": true,
+      "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
       "label": "Timestamp",
@@ -453,14 +393,14 @@
       "horizontalAlignment": "LEFT",
       "id": "rowIndex",
       "index": 7,
-      "isCellEditable": true,
+      "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
-      "isEditable": true,
+      "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "rowIndex",
       "notation": "standard",
       "originalId": "rowIndex",
@@ -476,11 +416,11 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "searchKey": "",
-  "serverSidePaginationEnabled": true,
+  "serverSidePaginationEnabled": false,
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{Find_Form_Responses_11.data}}",
   "textSize": "0.875rem",
-  "topRow": 6,
+  "topRow": 14,
   "totalRecordsCount": "{{Total_record_Form_Responses_11.data.length}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
