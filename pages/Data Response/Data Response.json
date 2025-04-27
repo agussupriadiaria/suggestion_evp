@@ -1,11 +1,12 @@
 {
   "gitSyncId": "68034d02eb43173b4ab718ca_cd9b641f-b288-4308-9089-bbdb94d6f40e",
   "unpublishedPage": {
+    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 710,
+          "bottomRow": 630,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -26,7 +27,7 @@
         }
       }
     ],
-    "name": "Page1",
-    "slug": "page1"
+    "name": "Data Response",
+    "slug": "data-response"
   }
 }
