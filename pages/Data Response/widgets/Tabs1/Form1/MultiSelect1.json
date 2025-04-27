@@ -1,0 +1,59 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 42,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "s6tmcommod",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Layanan Everpro",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 40,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 33,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "parentColumnSpace": 11.2138671875,
+  "parentId": "aubpttpkga",
+  "parentRowSpace": 10,
+  "placeholderText": "Pilih layanan Everpro",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 21,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"Shipping\",\n    \"code\": \"Shipping\"\n  },\n  {\n    \"name\": \"Ads Service\",\n    \"code\": \"Ads Service\"\n  },\n  {\n    \"name\": \"Everpro Chat\",\n    \"code\": \"Everpro Chat\"\n  },\n\t{\n    \"name\": \"Funnel\",\n    \"code\": \"Funnel\"\n  },\n\t{\n    \"name\": \"CRM\",\n    \"code\": \"CRM\"\n  },\n\t{\n    \"name\": \"MP Enabler\",\n    \"code\": \"MP Enabler\"\n  },\n\t{\n    \"name\": \"Product Sourcing\",\n    \"code\": \"Product Sourcing\"\n  }\n]",
+  "topRow": 35,
+  "type": "MULTI_SELECT_WIDGET_V2",
+  "version": 1,
+  "widgetId": "wp5kdktm2f",
+  "widgetName": "MultiSelect1"
+}

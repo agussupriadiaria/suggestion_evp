@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 74,
+  "bottomRow": 58,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -162,7 +162,7 @@
   "needsErrorInfo": false,
   "onAddNewRowSave": "{{Insert_Sheet11.run(() => {\n            showAlert(\"Successfully created!\");\n            Find_Sheet11.run()\n          }, () => {\n            showAlert(\"Unable to create!\");\n          })}}",
   "onPageChange": "{{\n            Find_Sheet11.run();\n            Total_record_Sheet11.run()\n          }}",
-  "onSearchTextChanged": "",
+  "onSearchTextChanged": "{{JSObject1.myFun1();}}",
   "onSort": "{{\n            Find_Sheet11.run();\n            Total_record_Sheet11.run()\n          }}",
   "originalBottomRow": 63,
   "originalTopRow": 6,

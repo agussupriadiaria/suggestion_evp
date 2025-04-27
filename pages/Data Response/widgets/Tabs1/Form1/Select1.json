@@ -1,0 +1,59 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 15,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "53u54vsy32",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Nama Agent",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 14,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 7,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "parentColumnSpace": 11.2138671875,
+  "parentId": "aubpttpkga",
+  "parentRowSpace": 10,
+  "placeholderText": "Pilih nama Agent",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 21,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"Rifki\",\n\t\t\"code\": \"Rifki\"\n  },\n  {\n    \"name\": \"Bella\",\n    \"code\": \"Bella\"\n  },\n  {\n    \"name\": \"Febri\",\n    \"code\": \"Febri\"\n  },\n\t {\n    \"name\": \"Rama\",\n    \"code\": \"Rama\"\n  },\n  {\n    \"name\": \"Binti\",\n    \"code\": \"Binti\"\n  },\n  {\n    \"name\": \"Yulia\",\n    \"code\": \"Yulia\"\n  }\n]",
+  "topRow": 8,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "zeis7jwo2y",
+  "widgetName": "Select1"
+}
