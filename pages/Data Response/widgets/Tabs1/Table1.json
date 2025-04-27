@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 63,
+  "bottomRow": 74,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -153,7 +153,7 @@
   "isVisibleSearch": true,
   "key": "o52g0wi1ea",
   "label": "Data",
-  "leftColumn": 6,
+  "leftColumn": 0,
   "minWidth": 450,
   "mobileBottomRow": 35,
   "mobileLeftColumn": 6,
@@ -167,7 +167,7 @@
   "originalBottomRow": 63,
   "originalTopRow": 6,
   "parentColumnSpace": 20.25,
-  "parentId": "0",
+  "parentId": "qcjjiv8dbj",
   "parentRowSpace": 10,
   "primaryColumns": {
     "Chat_dari_user_terkait_suggestion": {
@@ -473,11 +473,11 @@
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{Find_Sheet11.data}}",
   "textSize": "0.875rem",
-  "topRow": 6,
+  "topRow": 0,
   "totalRecordsCount": "{{Total_record_Sheet11.data.length}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
-  "widgetId": "et4dnisd6t",
+  "widgetId": "f15lwfvdfz",
   "widgetName": "Table1"
 }
