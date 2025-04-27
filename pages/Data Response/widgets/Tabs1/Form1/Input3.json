@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 18,
+  "bottomRow": 25,
   "boxShadow": "none",
   "defaultText": "",
   "dynamicBindingPathList": [
@@ -14,7 +14,7 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "MULTI_LINE_TEXT",
@@ -38,8 +38,6 @@
   "mobileRightColumn": 49,
   "mobileTopRow": 9,
   "needsErrorInfo": false,
-  "originalBottomRow": 18,
-  "originalTopRow": 8,
   "parentColumnSpace": 11.2138671875,
   "parentId": "aubpttpkga",
   "parentRowSpace": 10,
