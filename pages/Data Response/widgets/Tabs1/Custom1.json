@@ -3,7 +3,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 51,
+  "bottomRow": 45,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultModel": "{\n  \"tips\": [\n    \"Pass data to this widget in the default model field\",\n    \"Access data in the javascript file using the appsmith.model variable\",\n    \"Create events in the widget and trigger them in the javascript file using appsmith.triggerEvent('eventName')\",\n    \"Access data in CSS as var(--appsmith-model-{property-name})\"\n  ]\n}",
   "dynamicBindingPathList": [
@@ -30,13 +30,13 @@
   "isLoading": false,
   "isSearchWildcard": true,
   "isVisible": true,
-  "key": "ikd6pjk3b5",
-  "leftColumn": 0,
+  "key": "s1gcmjsyyz",
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "mobileBottomRow": 30,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 23,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 24,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
   "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
@@ -48,7 +48,7 @@
   "srcDoc": {
     "css": "#chart {\n  max-width: 650px;\n  margin: 35px auto;\n}",
     "html": "<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/apexcharts@3.36.0/dist/apexcharts.css\"/>\n<script src=\"https://cdn.jsdelivr.net/npm/apexcharts@3.36.0\"></script>\n<div id=\"root\"></div>\n",
-    "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport ReactDOM from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\nimport ApexCharts from 'https://cdn.jsdelivr.net/npm/apexcharts@3.36.0/+esm';\nfunction ChartComponent() {\n  React.useEffect(() => {\n    // Ambil data dari store (diset oleh JS object setelah query jalan)\n    const rawData = appsmith.store.Find_Sheet11 || [];\n    if (!Array.isArray(rawData) || rawData.length === 0) {\n      console.warn(\"Data tidak ditemukan atau kosong\");\n      return;\n    }\n\n    // Transformasi: hitung jumlah saran per 'Layanan Everpro'\n    const serviceCounts = {};\n    rawData.forEach(item => {\n      const service = item[\"Layanan Everpro\"];\n      if (service) {\n        serviceCounts[service] = (serviceCounts[service] || 0) + 1;\n      }\n    });\n    const categories = Object.keys(serviceCounts);\n    const dataCounts = Object.values(serviceCounts);\n\n    // Konfigurasi chart\n    const options = {\n      chart: {\n        type: 'bar',\n        height: 350\n      },\n      series: [{\n        name: 'Jumlah Saran',\n        data: dataCounts\n      }],\n      xaxis: {\n        categories: categories\n      }\n    };\n\n    // Render chart\n    const chartElement = document.querySelector(\"#chart\");\n    if (chartElement) {\n      const chart = new ApexCharts(chartElement, options);\n      chart.render();\n    } else {\n      console.error(\"Chart element not found\");\n    }\n  }, []);\n  return /*#__PURE__*/React.createElement(\"div\", {\n    id: \"chart\"\n  });\n}\n\n// Render komponen chart ke dalam elemen root\nappsmith.onReady(() => {\n  ReactDOM.render( /*#__PURE__*/React.createElement(ChartComponent, null), document.getElementById(\"root\"));\n});"
+    "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport ReactDOM from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\nimport ApexCharts from 'https://cdn.jsdelivr.net/npm/apexcharts@3.36.0/+esm';\nfunction ChartComponent() {\n  React.useEffect(() => {\n    const options = {\n      chart: {\n        type: 'bar',\n        height: 350,\n        stacked: false\n      },\n      series: [{\n        name: 'Everpro',\n        data: [10, 5, 7]\n      }, {\n        name: 'Evermos',\n        data: [3, 2, 4]\n      }],\n      xaxis: {\n        categories: [\"2023-06\", \"2023-07\", \"2023-08\"]\n      }\n    };\n    const chartElement = document.querySelector(\"#chart\");\n    if (chartElement) {\n      const chart = new ApexCharts(chartElement, options);\n      chart.render();\n    } else {\n      console.error(\"Chart element not found\");\n    }\n  }, []);\n  return /*#__PURE__*/React.createElement(\"div\", {\n    id: \"chart\"\n  });\n}\nappsmith.onReady(() => {\n  ReactDOM.render( /*#__PURE__*/React.createElement(ChartComponent, null), document.getElementById(\"root\"));\n});"
   },
   "theme": "{{appsmith.theme}}",
   "topRow": 0,
@@ -56,9 +56,9 @@
   "uncompiledSrcDoc": {
     "css": "#chart {\n  max-width: 650px;\n  margin: 35px auto;\n}\n",
     "html": "<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/apexcharts@3.36.0/dist/apexcharts.css\"/>\n<script src=\"https://cdn.jsdelivr.net/npm/apexcharts@3.36.0\"></script>\n<div id=\"root\"></div>\n",
-    "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport ReactDOM from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\nimport ApexCharts from 'https://cdn.jsdelivr.net/npm/apexcharts@3.36.0/+esm';\n\nfunction ChartComponent() {\n\tReact.useEffect(() => {\n\t\t// Ambil data dari store (diset oleh JS object setelah query jalan)\n\t\tconst rawData = appsmith.store.Find_Sheet11 || [];\n\n\t\tif (!Array.isArray(rawData) || rawData.length === 0) {\n\t\t\tconsole.warn(\"Data tidak ditemukan atau kosong\");\n\t\t\treturn;\n\t\t}\n\n\t\t// Transformasi: hitung jumlah saran per 'Layanan Everpro'\n\t\tconst serviceCounts = {};\n\t\trawData.forEach(item => {\n\t\t\tconst service = item[\"Layanan Everpro\"];\n\t\t\tif (service) {\n\t\t\t\tserviceCounts[service] = (serviceCounts[service] || 0) + 1;\n\t\t\t}\n\t\t});\n\n\t\tconst categories = Object.keys(serviceCounts);\n\t\tconst dataCounts = Object.values(serviceCounts);\n\n\t\t// Konfigurasi chart\n\t\tconst options = {\n\t\t\tchart: {\n\t\t\t\ttype: 'bar',\n\t\t\t\theight: 350\n\t\t\t},\n\t\t\tseries: [{\n\t\t\t\tname: 'Jumlah Saran',\n\t\t\t\tdata: dataCounts\n\t\t\t}],\n\t\t\txaxis: {\n\t\t\t\tcategories: categories\n\t\t\t}\n\t\t};\n\n\t\t// Render chart\n\t\tconst chartElement = document.querySelector(\"#chart\");\n\t\tif (chartElement) {\n\t\t\tconst chart = new ApexCharts(chartElement, options);\n\t\t\tchart.render();\n\t\t} else {\n\t\t\tconsole.error(\"Chart element not found\");\n\t\t}\n\t}, []);\n\n\treturn (\n\t\t<div id=\"chart\"></div>\n\t);\n}\n\n// Render komponen chart ke dalam elemen root\nappsmith.onReady(() => {\n\tReactDOM.render(<ChartComponent />, document.getElementById(\"root\"));\n});\n"
+    "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport ReactDOM from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\nimport ApexCharts from 'https://cdn.jsdelivr.net/npm/apexcharts@3.36.0/+esm';\n\nfunction ChartComponent() {\n\tReact.useEffect(() => {\n\t\tconst options = {\n\t\t\tchart: {\n\t\t\t\ttype: 'bar',\n\t\t\t\theight: 350,\n\t\t\t\tstacked: false\n\t\t\t},\n\t\t\tseries: [\n\t\t\t\t{\n\t\t\t\t\tname: 'Everpro',\n\t\t\t\t\tdata: [10, 5, 7]\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\tname: 'Evermos',\n\t\t\t\t\tdata: [3, 2, 4]\n\t\t\t\t}\n\t\t\t],\n\t\t\txaxis: {\n\t\t\t\tcategories: [\"2023-06\", \"2023-07\", \"2023-08\"]\n\t\t\t}\n\t\t};\n\n\t\tconst chartElement = document.querySelector(\"#chart\");\n\t\tif (chartElement) {\n\t\t\tconst chart = new ApexCharts(chartElement, options);\n\t\t\tchart.render();\n\t\t} else {\n\t\t\tconsole.error(\"Chart element not found\");\n\t\t}\n\t}, []);\n\n\treturn (\n\t\t<div id=\"chart\"></div>\n\t);\n}\n\nappsmith.onReady(() => {\n\tReactDOM.render(<ChartComponent />, document.getElementById(\"root\"));\n});\n"
   },
   "version": 1,
-  "widgetId": "mxqnrm1zww",
+  "widgetId": "dn0hos3c0w",
   "widgetName": "Custom1"
 }

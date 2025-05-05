@@ -121,6 +121,9 @@
     },
     {
       "key": "primaryColumns.EditActions1.isDiscardDisabled"
+    },
+    {
+      "key": "onSearchTextChanged"
     }
   ],
   "dynamicTriggerPathList": [
@@ -162,7 +165,7 @@
   "needsErrorInfo": false,
   "onAddNewRowSave": "{{Insert_Sheet11.run(() => {\n            showAlert(\"Successfully created!\");\n            Find_Sheet11.run()\n          }, () => {\n            showAlert(\"Unable to create!\");\n          })}}",
   "onPageChange": "{{\n            Find_Sheet11.run();\n            Total_record_Sheet11.run()\n          }}",
-  "onSearchTextChanged": "{{PrepareData.myFun1();}}",
+  "onSearchTextChanged": "{{Find_Sheet11.data}}",
   "onSort": "{{\n            Find_Sheet11.run();\n            Total_record_Sheet11.run()\n          }}",
   "originalBottomRow": 63,
   "originalTopRow": 6,
