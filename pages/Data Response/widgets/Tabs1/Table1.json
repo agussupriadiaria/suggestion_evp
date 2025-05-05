@@ -162,7 +162,7 @@
   "needsErrorInfo": false,
   "onAddNewRowSave": "{{Insert_Sheet11.run(() => {\n            showAlert(\"Successfully created!\");\n            Find_Sheet11.run()\n          }, () => {\n            showAlert(\"Unable to create!\");\n          })}}",
   "onPageChange": "{{\n            Find_Sheet11.run();\n            Total_record_Sheet11.run()\n          }}",
-  "onSearchTextChanged": "{{JSObject1.myFun1();}}",
+  "onSearchTextChanged": "{{PrepareData.myFun1();}}",
   "onSort": "{{\n            Find_Sheet11.run();\n            Total_record_Sheet11.run()\n          }}",
   "originalBottomRow": 63,
   "originalTopRow": 6,
