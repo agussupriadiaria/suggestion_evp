@@ -35,17 +35,18 @@
     "rowIndex",
     "Timestamp",
     "Nama_agent",
-    "Nomor_handphone_user__terhubung_whatsapp_",
+    "No_HP",
     "Nama_user",
     "Chat_dari_user_terkait_suggestion",
     "Summary_suggestion",
     "Layanan_Everpro"
   ],
-  "columnUpdatedAt": 1747052849652,
+  "columnUpdatedAt": 1747068309806,
   "columnWidthMap": {
     "Chat_dari_user_terkait_suggestion": 517,
+    "Nomor_handphone_user__terhubung_whatsapp_": 350,
     "Summary_suggestion": 749,
-    "rowIndex": 60
+    "rowIndex": 77
   },
   "customIsLoading": false,
   "customIsLoadingValue": "",
@@ -79,9 +80,6 @@
       "key": "primaryColumns.Nama_agent.computedValue"
     },
     {
-      "key": "primaryColumns.Nomor_handphone_user__terhubung_whatsapp_.computedValue"
-    },
-    {
       "key": "primaryColumns.Nama_user.computedValue"
     },
     {
@@ -95,6 +93,9 @@
     },
     {
       "key": "primaryColumns.rowIndex.computedValue"
+    },
+    {
+      "key": "primaryColumns.No_HP.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -103,6 +104,9 @@
     },
     {
       "key": "onSearchTextChanged"
+    },
+    {
+      "key": "onSort"
     }
   ],
   "dynamicTriggerPathList": [
@@ -142,7 +146,7 @@
   "onAddNewRowSave": "{{Insert_Sheet11.run(() => {\n            showAlert(\"Successfully created!\");\n            Find_Sheet11.run()\n          }, () => {\n            showAlert(\"Unable to create!\");\n          })}}",
   "onPageChange": "{{\n            Find_Sheet11.run();\n            Total_record_Sheet11.run()\n          }}",
   "onSearchTextChanged": "{{Find_Sheet11.data}}",
-  "onSort": "{{\n            Find_Sheet11.run();\n            Total_record_Sheet11.run()\n          }}",
+  "onSort": "{{Table1.selectedRow}}",
   "originalBottomRow": 63,
   "originalTopRow": 6,
   "parentColumnSpace": 20.25,
@@ -273,18 +277,20 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "Nomor_handphone_user__terhubung_whatsapp_": {
-      "alias": "Nomor handphone user (terhubung whatsapp)",
+    "No_HP": {
+      "alias": "No HP",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Nomor handphone user (terhubung whatsapp)\"]))}}",
+      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"No HP\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "",
       "horizontalAlignment": "LEFT",
-      "id": "Nomor_handphone_user__terhubung_whatsapp_",
+      "id": "No_HP",
       "index": 2,
       "isCellEditable": false,
       "isCellVisible": true,
@@ -294,10 +300,11 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Nomor handphone user (terhubung whatsapp)",
+      "label": "No HP",
       "notation": "standard",
-      "originalId": "Nomor handphone user (terhubung whatsapp)",
+      "originalId": "No HP",
       "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -373,7 +380,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "number",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"rowIndex\"]))}}",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"rowIndex\"] + 1)) :  currentRow[\"rowIndex\"] + 1 })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -389,7 +396,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "rowIndex",
+      "label": "No",
       "notation": "standard",
       "originalId": "rowIndex",
       "sticky": "",

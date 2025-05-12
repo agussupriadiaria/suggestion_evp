@@ -29,7 +29,7 @@
           "data": ""
         },
         "rowObjects": {
-          "data": "{{(Table1.newRow || {\n\t\"Nama agent\":Select1.selectedOptionValue\n})}}"
+          "data": "{{(Table1.newRow || {\n\t\"Timestamp\": Date(),\n\t\"Nama agent\":Select1.selectedOptionValue\n})}}"
         },
         "sheetName": {
           "data": "Sheet1"
