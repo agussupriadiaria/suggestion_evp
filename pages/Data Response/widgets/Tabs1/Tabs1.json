@@ -5,12 +5,12 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 61,
+  "bottomRow": 89,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 580,
+      "bottomRow": 750,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -56,7 +56,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 600,
+      "bottomRow": 750,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -102,7 +102,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 470,
+      "bottomRow": 750,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -146,7 +146,7 @@
       "widgetName": "Canvas7"
     }
   ],
-  "defaultTab": "Response",
+  "defaultTab": "Chart",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -174,7 +174,7 @@
   "mobileRightColumn": 24,
   "mobileTopRow": 64,
   "needsErrorInfo": false,
-  "originalBottomRow": 61,
+  "originalBottomRow": 89,
   "originalTopRow": 10,
   "parentColumnSpace": 20.25,
   "parentId": "0",
@@ -187,7 +187,8 @@
   "tabsObj": {
     "tab1": {
       "id": "tab1",
-      "index": 0,
+      "index": 1,
+      "isDuplicateLabel": false,
       "isVisible": true,
       "label": "Response",
       "positioning": "vertical",
@@ -195,7 +196,8 @@
     },
     "tab2": {
       "id": "tab2",
-      "index": 1,
+      "index": 0,
+      "isDuplicateLabel": false,
       "isVisible": true,
       "label": "Input",
       "positioning": "vertical",
@@ -204,6 +206,7 @@
     "tabtbs103y5sf": {
       "id": "tabtbs103y5sf",
       "index": 2,
+      "isDuplicateLabel": false,
       "isVisible": true,
       "label": "Chart",
       "widgetId": "l84u310uov"
