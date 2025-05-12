@@ -32,20 +32,20 @@
     }
   },
   "columnOrder": [
+    "rowIndex",
     "Timestamp",
     "Nama_agent",
     "Nomor_handphone_user__terhubung_whatsapp_",
     "Nama_user",
     "Chat_dari_user_terkait_suggestion",
     "Summary_suggestion",
-    "Layanan_Everpro",
-    "rowIndex",
-    "EditActions1"
+    "Layanan_Everpro"
   ],
-  "columnUpdatedAt": 1745744656498,
+  "columnUpdatedAt": 1747052849652,
   "columnWidthMap": {
     "Chat_dari_user_terkait_suggestion": 517,
-    "Summary_suggestion": 749
+    "Summary_suggestion": 749,
+    "rowIndex": 60
   },
   "customIsLoading": false,
   "customIsLoadingValue": "",
@@ -95,32 +95,11 @@
     },
     {
       "key": "primaryColumns.rowIndex.computedValue"
-    },
-    {
-      "key": "primaryColumns.EditActions1.saveButtonColor"
-    },
-    {
-      "key": "primaryColumns.EditActions1.saveBorderRadius"
-    },
-    {
-      "key": "primaryColumns.EditActions1.discardBorderRadius"
-    },
-    {
-      "key": "primaryColumns.EditActions1.isSaveDisabled"
-    },
-    {
-      "key": "primaryColumns.EditActions1.isDiscardDisabled"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
-    },
-    {
-      "key": "primaryColumns.EditActions1.isSaveDisabled"
-    },
-    {
-      "key": "primaryColumns.EditActions1.isDiscardDisabled"
     },
     {
       "key": "onSearchTextChanged"
@@ -138,9 +117,6 @@
     },
     {
       "key": "onAddNewRowSave"
-    },
-    {
-      "key": "primaryColumns.EditActions1.onSave"
     }
   ],
   "enableClientSideSearch": true,
@@ -198,50 +174,6 @@
       "notation": "standard",
       "originalId": "Chat dari user terkait suggestion",
       "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "EditActions1": {
-      "alias": "EditActions1",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "buttonStyle": "rgb(3, 179, 101)",
-      "columnType": "editActions",
-      "computedValue": "",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "discardActionLabel": "Discard",
-      "discardBorderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-      "discardButtonColor": "#F22B2B",
-      "discardButtonVariant": "TERTIARY",
-      "discardIconAlign": "left",
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "EditActions1",
-      "index": 8,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": true,
-      "isDisabled": false,
-      "isDiscardDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "Save / Discard",
-      "notation": "standard",
-      "onSave": "{{Update_Sheet11.run(() => {\n            showAlert(\"Successfully saved!\");\n            Find_Sheet11.run()\n          }, () => {\n            showAlert(\"Unable to save!\");\n          })}}",
-      "originalId": "EditActions1",
-      "saveActionLabel": "Save",
-      "saveBorderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-      "saveButtonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
-      "saveIconAlign": "left",
-      "sticky": "right",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -449,14 +381,14 @@
       "horizontalAlignment": "LEFT",
       "id": "rowIndex",
       "index": 7,
-      "isCellEditable": true,
+      "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
-      "isEditable": true,
+      "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "rowIndex",
       "notation": "standard",
       "originalId": "rowIndex",

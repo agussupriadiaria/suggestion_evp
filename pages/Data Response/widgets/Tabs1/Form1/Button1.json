@@ -14,6 +14,11 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
@@ -26,6 +31,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
+  "onClick": "{{Insert_Sheet11.run()}}",
   "originalBottomRow": 50,
   "originalTopRow": 46,
   "parentId": "aubpttpkga",
