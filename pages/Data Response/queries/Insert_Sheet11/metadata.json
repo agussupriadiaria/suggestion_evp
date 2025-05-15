@@ -29,7 +29,7 @@
           "data": ""
         },
         "rowObjects": {
-          "data": "{{(Table1.newRow || {\n\t\"Timestamp\": Date(),\n\t\"Nama agent\":Select1.selectedOptionValue\n})}}"
+          "data": "{{(Table1.newRow || {\n\t\"Timestamp\": moment().format(\"DD/MM/YYYY HH:mm\"),\n\t\"Nama agent\":Select1.selectedOptionValue,\n\t\"No HP\": Input1.text,\n\t\"Nama user\": Input2.text,\n\t\"Chat dari user terkait suggestion\": Input3.text,\n\t\"Summary suggestion\": Input4.text,\n\t\"Layanan Everpro\": MultiSelect1.selectedOptionValues.join(\", \")\n})}}"
         },
         "sheetName": {
           "data": "Sheet1"

@@ -7,7 +7,7 @@
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "chartData": {
     "vfw36l0f96": {
-      "color": "#93c5fd",
+      "color": "#22c55e",
       "data": "[\n  {\n    \"x\": \"ADS SERVICE\",\n    \"y\": {{Table2.selectedRow[\"ADS SERVICE\"]}}\n  },\n  {\n    \"x\": \"CRM\",\n    \"y\": {{Table2.selectedRow.CRM}}\n  },\n  {\n    \"x\": \"EVERPRO CHAT\",\n    \"y\": {{Table2.selectedRow[\"EVERPRO CHAT\"]}}\n  },\n    {\n    \"x\": \"FUNNEL\",\n    \"y\": {{Table2.selectedRow.FUNNEL}}\n  },{\n    \"x\": \"MP ENABLER\",\n    \"y\": {{Table2.selectedRow[\"MP ENABLER\"]}}\n  },\n    {\n    \"x\": \"PRODUCT SOURCHING\",\n    \"y\": {{Table2.selectedRow[\"PRODUCT SOURCING\"]}}\n  },\n  {\n    \"x\": \"SHIPPING\",\n    \"y\": {{Table2.selectedRow.SHIPPING}}\n  }\n]",
       "seriesName": "All Services"
     }
