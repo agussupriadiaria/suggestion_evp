@@ -342,6 +342,7 @@
       "columnType": "text",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Nomor handphone user (terhubung whatsapp)\"]))}}",
       "currencyCode": "USD",
+      "customAlias": "",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
