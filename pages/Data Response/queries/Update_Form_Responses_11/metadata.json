@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6836ffc4660e037d66c399a9_6744d28b-4bbe-46a3-8327-9e37c34daf98",
-  "id": "Data Response_Insert_Mapping21",
+  "gitSyncId": "6836ffc4660e037d66c399a9_7bf778dd-b82b-4768-bf69-7f5ff85747d1",
+  "id": "Data Response_Update_Form_Responses_11",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -8,7 +8,7 @@
       "encodeParamsToggle": true,
       "formData": {
         "command": {
-          "data": "INSERT_ONE"
+          "data": "UPDATE_ONE"
         },
         "entityType": {
           "data": "ROWS"
@@ -29,10 +29,10 @@
           "data": ""
         },
         "rowObjects": {
-          "data": "{{(Table2.newRow || {})}}"
+          "data": "{{Table1.updatedRow}}"
         },
         "sheetName": {
-          "data": "Mapping2"
+          "data": "Form Responses 1"
         },
         "sheetUrl": {
           "data": "https://docs.google.com/spreadsheets/d/14Yhy3SpX9DC5UABYwc8XUYGcMsgsOeNo-kf_K2AprgU/edit"
@@ -65,7 +65,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "Insert_Mapping21",
+    "name": "Update_Form_Responses_11",
     "pageId": "Data Response",
     "userSetOnLoad": false
   }

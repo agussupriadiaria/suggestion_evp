@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6836ffc4660e037d66c399a9_a17e7ece-7ec5-4bee-9ff9-fb2a120da972",
-  "id": "Data Response_Update_Mapping21",
+  "gitSyncId": "6836ffc4660e037d66c399a9_f11c4157-a476-426c-9945-52a90901f89c",
+  "id": "Data Response_Insert_Form_Responses_11",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -8,7 +8,7 @@
       "encodeParamsToggle": true,
       "formData": {
         "command": {
-          "data": "UPDATE_ONE"
+          "data": "INSERT_ONE"
         },
         "entityType": {
           "data": "ROWS"
@@ -29,10 +29,10 @@
           "data": ""
         },
         "rowObjects": {
-          "data": "{{Table2.updatedRow}}"
+          "data": "{{(Table1.newRow || {\n\t\"Timestamp\": moment().format(\"DD/MM/YYYY HH:mm\"),\n\t\"Nama agent\":Select1.selectedOptionValue,\n\t\"Nomor handphone user (terhubung whatsapp)\": Input1.text,\n\t\"Nama user\": Input2.text,\n\t\"Chat dari user terkait suggestion\": Input3.text,\n\t\"Summary suggestion\": Input4.text,\n\t\"Layanan Everpro\": MultiSelect1.selectedOptionValues.join(\", \")\n})}}"
         },
         "sheetName": {
-          "data": "Mapping2"
+          "data": "Form Responses 1"
         },
         "sheetUrl": {
           "data": "https://docs.google.com/spreadsheets/d/14Yhy3SpX9DC5UABYwc8XUYGcMsgsOeNo-kf_K2AprgU/edit"
@@ -65,7 +65,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "Update_Mapping21",
+    "name": "Insert_Form_Responses_11",
     "pageId": "Data Response",
     "userSetOnLoad": false
   }

@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6836ffc4660e037d66c399a9_12cc09ad-a689-499f-890d-53f132ded4a1",
-  "id": "Data Response_Total_record_Mapping21",
+  "gitSyncId": "6836ffc4660e037d66c399a9_2a701ddf-7f10-4258-9765-dfc5aa7c749f",
+  "id": "Data Response_Total_record_Form_Responses_11",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -29,7 +29,7 @@
           "data": ""
         },
         "sheetName": {
-          "data": "Mapping2"
+          "data": "Form Responses 1"
         },
         "sheetUrl": {
           "data": "https://docs.google.com/spreadsheets/d/14Yhy3SpX9DC5UABYwc8XUYGcMsgsOeNo-kf_K2AprgU/edit"
@@ -45,8 +45,8 @@
             "children": [
               {
                 "condition": "CONTAINS",
-                "key": "{{Table2.searchText ? \"Nomor handphone user (terhubung whatsapp)\" : \"\"}}",
-                "value": "{{Table2.searchText}}"
+                "key": "{{Table1.searchText ? \"Nomor handphone user (terhubung whatsapp)\" : \"\"}}",
+                "value": "{{Table1.searchText}}"
               }
             ],
             "condition": "AND"
@@ -69,7 +69,7 @@
       }
     ],
     "executeOnLoad": true,
-    "name": "Total_record_Mapping21",
+    "name": "Total_record_Form_Responses_11",
     "pageId": "Data Response",
     "userSetOnLoad": false
   }

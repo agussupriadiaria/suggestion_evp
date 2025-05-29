@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6836ffc4660e037d66c399a9_551c2c97-98b9-4142-99bd-a1e282cf7296",
-  "id": "Data Response_Find_Mapping21",
+  "gitSyncId": "6836ffc4660e037d66c399a9_91fac352-a40f-4173-bfb0-25a8bea20181",
+  "id": "Data Response_Find_Form_Responses_11",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -15,8 +15,8 @@
         },
         "pagination": {
           "data": {
-            "limit": "2000",
-            "offset": "{{Table2.pageOffset}}"
+            "limit": "3000",
+            "offset": "656"
           }
         },
         "projection": {
@@ -29,7 +29,7 @@
           "data": ""
         },
         "sheetName": {
-          "data": "Mapping2"
+          "data": "Form Responses 1"
         },
         "sheetUrl": {
           "data": "https://docs.google.com/spreadsheets/d/14Yhy3SpX9DC5UABYwc8XUYGcMsgsOeNo-kf_K2AprgU/edit"
@@ -40,8 +40,8 @@
         "sortBy": {
           "data": [
             {
-              "column": "{{Table2.sortOrder.column}}",
-              "order": "Table2.sortOrder.order !== \"desc\""
+              "column": "{{Table1.sortOrder.column}}",
+              "order": "Table1.sortOrder.order !== \"desc\""
             }
           ]
         },
@@ -53,8 +53,8 @@
             "children": [
               {
                 "condition": "CONTAINS",
-                "key": "{{Table2.searchText ? \"Nomor handphone user (terhubung whatsapp)\" : \"\"}}",
-                "value": "{{Table2.searchText}}"
+                "key": "{{Table1.searchText ? \"Nomor handphone user (terhubung whatsapp)\" : \"\"}}",
+                "value": "{{Table1.searchText}}"
               }
             ],
             "condition": "AND"
@@ -83,7 +83,7 @@
       }
     ],
     "executeOnLoad": true,
-    "name": "Find_Mapping21",
+    "name": "Find_Form_Responses_11",
     "pageId": "Data Response",
     "userSetOnLoad": false
   }
