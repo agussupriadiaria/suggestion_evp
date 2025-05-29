@@ -41,7 +41,7 @@
           "data": [
             {
               "column": "{{Table1.sortOrder.column}}",
-              "order": "Table1.sortOrder.order !== \"desc\""
+              "order": "Descending"
             }
           ]
         },

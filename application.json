@@ -25,9 +25,9 @@
   },
   "applicationVersion": 2,
   "collapseInvisibleWidgets": true,
-  "color": "#E4D8CC",
+  "color": "#D9E7FF",
   "evaluationVersion": 2,
-  "icon": "pie-chart",
+  "icon": "bag",
   "pages": [
     {
       "id": "Data Response",
