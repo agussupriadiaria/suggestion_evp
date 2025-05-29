@@ -43,7 +43,10 @@
     "EditActions1"
   ],
   "columnUpdatedAt": 1748508705679,
-  "columnWidthMap": {},
+  "columnWidthMap": {
+    "Chat_dari_user_terkait_suggestion": 448,
+    "Summary_suggestion": 613
+  },
   "customIsLoading": false,
   "customIsLoadingValue": "",
   "defaultPageSize": 0,
@@ -336,7 +339,7 @@
       "alias": "Nomor handphone user (terhubung whatsapp)",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "columnType": "number",
+      "columnType": "text",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Nomor handphone user (terhubung whatsapp)\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
