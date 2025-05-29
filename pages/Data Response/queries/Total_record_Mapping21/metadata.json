@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6836ffc4660e037d66c399a9_812c9d9e-aaf7-4216-bcb6-277d11c2b0f5",
-  "id": "Data Response_Find_Mapping1",
+  "gitSyncId": "6836ffc4660e037d66c399a9_12cc09ad-a689-499f-890d-53f132ded4a1",
+  "id": "Data Response_Total_record_Mapping21",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -15,8 +15,8 @@
         },
         "pagination": {
           "data": {
-            "limit": "{{Table2.pageSize}}",
-            "offset": "{{Table2.pageOffset}}"
+            "limit": "20",
+            "offset": "0"
           }
         },
         "projection": {
@@ -29,21 +29,13 @@
           "data": ""
         },
         "sheetName": {
-          "data": "Mapping"
+          "data": "Mapping2"
         },
         "sheetUrl": {
           "data": "https://docs.google.com/spreadsheets/d/14Yhy3SpX9DC5UABYwc8XUYGcMsgsOeNo-kf_K2AprgU/edit"
         },
         "smartSubstitution": {
           "data": true
-        },
-        "sortBy": {
-          "data": [
-            {
-              "column": "{{Table2.sortOrder.column}}",
-              "order": "Table2.sortOrder.order !== \"desc\""
-            }
-          ]
         },
         "tableHeaderIndex": {
           "data": "1"
@@ -74,16 +66,10 @@
     "dynamicBindingPathList": [
       {
         "key": "formData.where.data"
-      },
-      {
-        "key": "formData.sortBy.data"
-      },
-      {
-        "key": "formData.pagination.data"
       }
     ],
     "executeOnLoad": true,
-    "name": "Find_Mapping1",
+    "name": "Total_record_Mapping21",
     "pageId": "Data Response",
     "userSetOnLoad": false
   }

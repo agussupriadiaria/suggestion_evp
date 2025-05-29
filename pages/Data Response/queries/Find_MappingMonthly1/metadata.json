@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6836ffc4660e037d66c399a9_f2b321dc-6735-4490-a21b-6fa367ff043d",
-  "id": "Data Response_Total_record_Mapping1",
+  "gitSyncId": "6836ffc4660e037d66c399a9_0dea2230-0b41-4816-a0d7-806c4fe69b26",
+  "id": "Data Response_Find_MappingMonthly1",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -15,8 +15,8 @@
         },
         "pagination": {
           "data": {
-            "limit": "20",
-            "offset": "0"
+            "limit": "{{Table2.pageSize}}",
+            "offset": "{{Table2.pageOffset}}"
           }
         },
         "projection": {
@@ -29,13 +29,21 @@
           "data": ""
         },
         "sheetName": {
-          "data": "Mapping"
+          "data": "MappingMonthly"
         },
         "sheetUrl": {
           "data": "https://docs.google.com/spreadsheets/d/14Yhy3SpX9DC5UABYwc8XUYGcMsgsOeNo-kf_K2AprgU/edit"
         },
         "smartSubstitution": {
           "data": true
+        },
+        "sortBy": {
+          "data": [
+            {
+              "column": "{{Table2.sortOrder.column}}",
+              "order": "Table2.sortOrder.order !== \"desc\""
+            }
+          ]
         },
         "tableHeaderIndex": {
           "data": "1"
@@ -45,7 +53,7 @@
             "children": [
               {
                 "condition": "CONTAINS",
-                "key": "{{Table2.searchText ? \"Nomor handphone user (terhubung whatsapp)\" : \"\"}}",
+                "key": "{{Table2.searchText ? \"Bulan\" : \"\"}}",
                 "value": "{{Table2.searchText}}"
               }
             ],
@@ -66,10 +74,16 @@
     "dynamicBindingPathList": [
       {
         "key": "formData.where.data"
+      },
+      {
+        "key": "formData.sortBy.data"
+      },
+      {
+        "key": "formData.pagination.data"
       }
     ],
     "executeOnLoad": true,
-    "name": "Total_record_Mapping1",
+    "name": "Find_MappingMonthly1",
     "pageId": "Data Response",
     "userSetOnLoad": false
   }

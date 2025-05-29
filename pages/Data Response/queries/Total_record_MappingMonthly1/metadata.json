@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6836ffc4660e037d66c399a9_3b49d795-3de6-46bc-803f-423daa86b528",
-  "id": "Data Response_Insert_Mapping1",
+  "gitSyncId": "6836ffc4660e037d66c399a9_f12878bf-c09b-44e6-bd4c-15a83b570230",
+  "id": "Data Response_Total_record_MappingMonthly1",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -8,7 +8,7 @@
       "encodeParamsToggle": true,
       "formData": {
         "command": {
-          "data": "INSERT_ONE"
+          "data": "FETCH_MANY"
         },
         "entityType": {
           "data": "ROWS"
@@ -28,11 +28,8 @@
         "range": {
           "data": ""
         },
-        "rowObjects": {
-          "data": "{{(Table2.newRow || {})}}"
-        },
         "sheetName": {
-          "data": "Mapping"
+          "data": "MappingMonthly"
         },
         "sheetUrl": {
           "data": "https://docs.google.com/spreadsheets/d/14Yhy3SpX9DC5UABYwc8XUYGcMsgsOeNo-kf_K2AprgU/edit"
@@ -45,6 +42,13 @@
         },
         "where": {
           "data": {
+            "children": [
+              {
+                "condition": "CONTAINS",
+                "key": "{{Table2.searchText ? \"Bulan\" : \"\"}}",
+                "value": "{{Table2.searchText}}"
+              }
+            ],
             "condition": "AND"
           }
         }
@@ -61,11 +65,11 @@
     },
     "dynamicBindingPathList": [
       {
-        "key": "formData.rowObjects.data"
+        "key": "formData.where.data"
       }
     ],
-    "executeOnLoad": false,
-    "name": "Insert_Mapping1",
+    "executeOnLoad": true,
+    "name": "Total_record_MappingMonthly1",
     "pageId": "Data Response",
     "userSetOnLoad": false
   }

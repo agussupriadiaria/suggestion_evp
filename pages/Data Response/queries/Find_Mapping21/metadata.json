@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6836ffc4660e037d66c399a9_3d0f3b09-f664-47d4-82c3-8a248dba8420",
-  "id": "Data Response_Update_Mapping1",
+  "gitSyncId": "6836ffc4660e037d66c399a9_551c2c97-98b9-4142-99bd-a1e282cf7296",
+  "id": "Data Response_Find_Mapping21",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -8,15 +8,15 @@
       "encodeParamsToggle": true,
       "formData": {
         "command": {
-          "data": "UPDATE_ONE"
+          "data": "FETCH_MANY"
         },
         "entityType": {
           "data": "ROWS"
         },
         "pagination": {
           "data": {
-            "limit": "20",
-            "offset": "0"
+            "limit": "2000",
+            "offset": "{{Table2.pageOffset}}"
           }
         },
         "projection": {
@@ -28,11 +28,8 @@
         "range": {
           "data": ""
         },
-        "rowObjects": {
-          "data": "{{Table2.updatedRow}}"
-        },
         "sheetName": {
-          "data": "Mapping"
+          "data": "Mapping2"
         },
         "sheetUrl": {
           "data": "https://docs.google.com/spreadsheets/d/14Yhy3SpX9DC5UABYwc8XUYGcMsgsOeNo-kf_K2AprgU/edit"
@@ -40,11 +37,26 @@
         "smartSubstitution": {
           "data": true
         },
+        "sortBy": {
+          "data": [
+            {
+              "column": "{{Table2.sortOrder.column}}",
+              "order": "Table2.sortOrder.order !== \"desc\""
+            }
+          ]
+        },
         "tableHeaderIndex": {
           "data": "1"
         },
         "where": {
           "data": {
+            "children": [
+              {
+                "condition": "CONTAINS",
+                "key": "{{Table2.searchText ? \"Nomor handphone user (terhubung whatsapp)\" : \"\"}}",
+                "value": "{{Table2.searchText}}"
+              }
+            ],
             "condition": "AND"
           }
         }
@@ -61,11 +73,17 @@
     },
     "dynamicBindingPathList": [
       {
-        "key": "formData.rowObjects.data"
+        "key": "formData.where.data"
+      },
+      {
+        "key": "formData.sortBy.data"
+      },
+      {
+        "key": "formData.pagination.data"
       }
     ],
-    "executeOnLoad": false,
-    "name": "Update_Mapping1",
+    "executeOnLoad": true,
+    "name": "Find_Mapping21",
     "pageId": "Data Response",
     "userSetOnLoad": false
   }
