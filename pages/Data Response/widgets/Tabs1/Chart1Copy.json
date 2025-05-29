@@ -3,11 +3,11 @@
   "allowScroll": false,
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 73,
+  "bottomRow": 90,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "chartData": {
     "vfw36l0f96": {
-      "data": "[\n  {\n    \"x\": \"ADS SERVICE\",\n    \"y\": {{Table2.selectedRow[\"ADS SERVICE\"]}}\n  },\n  {\n    \"x\": \"CRM\",\n    \"y\": {{Table2.selectedRow.CRM}}\n  },\n  {\n    \"x\": \"EVERPRO CHAT\",\n    \"y\": {{Table2.selectedRow[\"EVERPRO CHAT\"]}}\n  },\n    {\n    \"x\": \"FUNNEL\",\n    \"y\": {{Table2.selectedRow.FUNNEL}}\n  },{\n    \"x\": \"MP ENABLER\",\n    \"y\": {{Table2.selectedRow[\"MP ENABLER\"]}}\n  },\n    {\n    \"x\": \"PRODUCT SOURCHING\",\n    \"y\": {{Table2.selectedRow[\"PRODUCT SOURCING\"]}}\n  },\n  {\n    \"x\": \"SHIPPING\",\n    \"y\": {{Table2.selectedRow.SHIPPING}}\n  }\n]",
+      "data": "[\n  {\n    \"x\": \"ADS SERVICE\",\n    \"y\": {{Table2.selectedRow[\"ADS SERVICE\"]}}\n  },\n    {\n    \"x\": \"CRM\",\n    \"y\": {{Table2.selectedRow.CRM}}\n  },\n  {\n    \"x\": \"PRODUCT SOURCING\",\n    \"y\": {{Table2.selectedRow[\"PRODUCT SOURCING\"]}}\n  },\n    {\n    \"x\": \"SHIPPING\",\n    \"y\": {{Table2.selectedRow.SHIPPING}}\n  },\n  {\n    \"x\": \"WEB BUILDER\",\n    \"y\": {{Table2.selectedRow[\"WEB BUILDER\"]}}\n  },\n    {\n    \"x\": \"EVERPRO CHAT\",\n    \"y\": {{Table2.selectedRow[\"EVERPRO CHAT\"]}}\n  },\n  {\n    \"x\": \"MP ENABLER\",\n    \"y\": {{Table2.selectedRow[\"MP ENABLER\"]}}\n  }\n]",
       "seriesName": "All Services"
     }
   },
@@ -91,7 +91,7 @@
   "isVisible": true,
   "key": "pex943fax9",
   "labelOrientation": "auto",
-  "leftColumn": 44,
+  "leftColumn": 32,
   "minWidth": 450,
   "mobileBottomRow": 92,
   "mobileLeftColumn": 1,

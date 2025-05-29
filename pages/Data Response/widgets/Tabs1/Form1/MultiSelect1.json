@@ -52,7 +52,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 21,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"Shipping\",\n    \"code\": \"Shipping\"\n  },\n  {\n    \"name\": \"Ads Service\",\n    \"code\": \"Ads Service\"\n  },\n  {\n    \"name\": \"Everpro Chat\",\n    \"code\": \"Everpro Chat\"\n  },\n\t{\n    \"name\": \"Web Builder\",\n    \"code\": \"Web Builder\"\n  },\n\t{\n    \"name\": \"CRM\",\n    \"code\": \"CRM\"\n  },\n\t{\n    \"name\": \"MP Enabler\",\n    \"code\": \"MP Enabler\"\n  },\n\t{\n    \"name\": \"Product Sourcing\",\n    \"code\": \"Product Sourcing\"\n  }\n]",
+  "sourceData": "[\n  {\n    \"name\": \"ADS SERVICE\",\n    \"code\": \"ADS SERVICE\"\n  },\n  {\n    \"name\": \"CRM\",\n    \"code\": \"CRM\"\n  },\n  {\n    \"name\": \"EVERPRO CHAT\",\n    \"code\": \"EVERPRO CHAT\"\n  },\n  {\n    \"name\": \"MP ENABLER\",\n    \"code\": \"MP ENABLER\"\n  },\n  {\n    \"name\": \"PRODUCT SOURCING\",\n    \"code\": \"PRODUCT SOURCING\"\n  },\n  {\n    \"name\": \"SHIPPING\",\n    \"code\": \"SHIPPING\"\n  },\n  {\n    \"name\": \"WEB BUILDER\",\n    \"code\": \"WEB BUILDER\"\n  }\n]\n",
   "topRow": 35,
   "type": "MULTI_SELECT_WIDGET_V2",
   "version": 1,

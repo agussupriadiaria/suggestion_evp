@@ -45,11 +45,12 @@
     "Department",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1748484029753,
+  "columnUpdatedAt": 1748506270334,
   "columnWidthMap": {},
   "customIsLoading": false,
   "customIsLoadingValue": "",
   "defaultPageSize": 0,
+  "defaultSearchText": "",
   "defaultSelectedRowIndex": 0,
   "defaultSelectedRowIndices": [
     0
@@ -148,7 +149,7 @@
       "key": "primaryColumns.EditActions1.onSave"
     }
   ],
-  "enableClientSideSearch": false,
+  "enableClientSideSearch": true,
   "flexVerticalAlignment": "start",
   "horizontalAlignment": "LEFT",
   "inlineEditingSaveOption": "ROW_LEVEL",
@@ -170,7 +171,7 @@
   "needsErrorInfo": false,
   "onAddNewRowSave": "{{Insert_Mapping21.run(() => {\n            showAlert(\"Successfully created!\");\n            Find_Mapping21.run()\n          }, () => {\n            showAlert(\"Unable to create!\");\n          })}}",
   "onPageChange": "{{\n            Find_Mapping21.run();\n            Total_record_Mapping21.run()\n          }}",
-  "onSearchTextChanged": "",
+  "onSearchTextChanged": "{{}}",
   "onSort": "{{\n            Find_Mapping21.run();\n            Total_record_Mapping21.run()\n          }}",
   "parentColumnSpace": 19.9375,
   "parentId": "qcjjiv8dbj",
@@ -598,7 +599,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "searchKey": "",
-  "serverSidePaginationEnabled": true,
+  "serverSidePaginationEnabled": false,
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{Find_Mapping21.data}}",
   "textSize": "0.875rem",

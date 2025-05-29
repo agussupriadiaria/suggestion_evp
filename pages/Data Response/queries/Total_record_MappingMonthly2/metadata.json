@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6836ffc4660e037d66c399a9_0dea2230-0b41-4816-a0d7-806c4fe69b26",
-  "id": "Data Response_Find_MappingMonthly1",
+  "gitSyncId": "6836ffc4660e037d66c399a9_bcf6f282-b5f4-44b8-95fe-4334558f124d",
+  "id": "Data Response_Total_record_MappingMonthly2",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -15,8 +15,8 @@
         },
         "pagination": {
           "data": {
-            "limit": "{{Table2.pageSize}}",
-            "offset": "{{Table2.pageOffset}}"
+            "limit": "20",
+            "offset": "0"
           }
         },
         "projection": {
@@ -36,14 +36,6 @@
         },
         "smartSubstitution": {
           "data": true
-        },
-        "sortBy": {
-          "data": [
-            {
-              "column": "{{Table2.sortOrder.column}}",
-              "order": "Table2.sortOrder.order !== \"desc\""
-            }
-          ]
         },
         "tableHeaderIndex": {
           "data": "1"
@@ -74,16 +66,10 @@
     "dynamicBindingPathList": [
       {
         "key": "formData.where.data"
-      },
-      {
-        "key": "formData.sortBy.data"
-      },
-      {
-        "key": "formData.pagination.data"
       }
     ],
-    "executeOnLoad": false,
-    "name": "Find_MappingMonthly1",
+    "executeOnLoad": true,
+    "name": "Total_record_MappingMonthly2",
     "pageId": "Data Response",
     "userSetOnLoad": false
   }
