@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "6836ffc4660e037d66c399a9_f12878bf-c09b-44e6-bd4c-15a83b570230",
+  "gitSyncId": "6836ffc4660e037d66c399a9_86bffb89-1991-4fe6-826a-6d879adb2ff5",
   "id": "Data Response_Total_record_MappingMonthly1",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
@@ -68,7 +68,7 @@
         "key": "formData.where.data"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "Total_record_MappingMonthly1",
     "pageId": "Data Response",
     "userSetOnLoad": false
