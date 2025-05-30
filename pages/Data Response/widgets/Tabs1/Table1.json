@@ -162,7 +162,7 @@
   "onAddNewRowSave": "{{Insert_Form_Responses_11.run(() => {\n            showAlert(\"Successfully created!\");\n            Find_Form_Responses_11.run()\n          }, () => {\n            showAlert(\"Unable to create!\");\n          })}}",
   "onPageChange": "{{\n            Find_Form_Responses_11.run();\n            Total_record_Form_Responses_11.run()\n          }}",
   "onSearchTextChanged": "",
-  "onSort": "{{\n            Find_Form_Responses_11.run();\n            Total_record_Form_Responses_11.run()\n          }}",
+  "onSort": "",
   "parentColumnSpace": 19.9375,
   "parentId": "qcjjiv8dbj",
   "parentRowSpace": 10,
