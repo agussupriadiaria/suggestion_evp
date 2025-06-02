@@ -44,7 +44,10 @@
   ],
   "columnUpdatedAt": 1748848680712,
   "columnWidthMap": {
+    "Chat_Customer": 554,
     "Chat_dari_user_terkait_suggestion": 448,
+    "Customer_Name": 171,
+    "Summary_Suggestion": 495.00000000000006,
     "Summary_suggestion": 613
   },
   "customIsLoading": false,
@@ -146,7 +149,7 @@
   "isLoading": false,
   "isSortable": true,
   "isVisible": true,
-  "isVisibleDownload": false,
+  "isVisibleDownload": true,
   "isVisibleFilters": true,
   "isVisiblePagination": true,
   "isVisibleSearch": true,

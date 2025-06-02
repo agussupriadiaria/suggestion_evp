@@ -122,7 +122,7 @@
   "isLoading": false,
   "isSortable": true,
   "isVisible": true,
-  "isVisibleDownload": false,
+  "isVisibleDownload": true,
   "isVisibleFilters": true,
   "isVisiblePagination": true,
   "isVisibleSearch": true,
