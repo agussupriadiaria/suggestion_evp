@@ -109,6 +109,6 @@
   "version": 1,
   "widgetId": "v77r4jitv6",
   "widgetName": "Chart1",
-  "xAxisName": "Layanan Everpro",
-  "yAxisName": "Jumlah Layanan"
+  "xAxisName": "Jumlah Saran",
+  "yAxisName": "Layanan Everpro"
 }
