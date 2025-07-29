@@ -82,9 +82,9 @@
         "key": "formData.pagination.data"
       }
     ],
-    "executeOnLoad": true,
     "name": "Find_Form_Responses_11",
     "pageId": "Data Response",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
 }

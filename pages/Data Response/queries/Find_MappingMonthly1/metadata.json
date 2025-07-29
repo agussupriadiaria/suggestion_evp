@@ -82,9 +82,9 @@
         "key": "formData.pagination.data"
       }
     ],
-    "executeOnLoad": true,
     "name": "Find_MappingMonthly1",
     "pageId": "Data Response",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
 }
